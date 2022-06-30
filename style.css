@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(180, 230, 231);
+    margin: 0;
+    padding: 0;
+}
+
+.spinner-first{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: cadetblue;
+}
+
+.spinner-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: azure;
+}
+
+.spinner-three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: darkgrey;
+}
+
+@keyframes maketour{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loader-first{
+    height: 40px;
+    width: 40px;
+    writing-mode: horizontal-tb;
+    border: 4px solid rgb(178, 178, 184);
+    border-block-end-color: rgb(255, 255, 255);
+    border-block-end-width: 5px;
+    border-radius: 30px;
+    animation: maketour 0.5s linear infinite;
+}
+
