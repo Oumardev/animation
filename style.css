@@ -28,6 +28,14 @@ body{
     background-color: darkgrey;
 }
 
+.spinner-four{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: #393939;
+}
+
 @keyframes maketour{
     from{
         transform: rotate(0deg);
@@ -122,3 +130,37 @@ body{
     animation: maketour 4s linear infinite;  
 }
 
+@keyframes showhidden{
+    from{
+        height: 25px;
+        opacity: 1;
+    }
+
+    to{
+        height: 0px;
+        opacity: 0;
+    }
+}
+
+.spinner-four .bar-1{
+    height: 25px;
+    width: 5px;
+    margin: 2px;
+    background-color: azure;
+    animation: showhidden 1s linear infinite;
+}
+
+.spinner-four .bar-2{
+    height: 25px;
+    width: 5px;
+    margin: 2px;
+    background-color: azure;
+    animation: showhidden 1.5s linear infinite;
+}
+.spinner-four .bar-3{
+    height: 25px;
+    width: 5px;
+    margin: 2px;
+    background-color: azure;
+    animation: showhidden 1.8s linear infinite;
+}
