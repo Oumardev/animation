@@ -24,8 +24,15 @@ span{
     padding: 0;
 }
 
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     align-items: center;
@@ -33,13 +40,36 @@ span{
 }
 
 .card{
-    height: 310px;
+    height: 333px;
     width: 325px;
     background-color: whitesmoke;
 }
 
+@keyframes slideup{
+    0%{
+        height: 208px;
+    }
+
+    100%{
+        height: 110px;
+        background-color: #222121c2;
+    }
+    
+    /* 100%{
+        height: 208px;
+    } */
+}
+
+.sec-picture:hover{
+    animation: slideup .4s forwards;
+}
+
+.sec-picture-rev{
+    animation: slideup reverse .4s forwards;
+}
+
 .card .sec-picture{
-    height: 220px;
+    height: 208px;
     width: 325px;
     background-color: #dbd8d8c2;
 }
@@ -99,4 +129,26 @@ span{
     font-weight: 300;
     color: white;
     margin: 5px;
+}
+
+.sec-info{
+    margin: 15px;
+}
+
+.title h2{
+    font-weight: bold;
+}
+
+.link{
+    margin-top: 15px;
+}
+
+.link a{
+    color: #62daaf;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text{
+    display: none;
 }
